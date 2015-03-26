@@ -365,11 +365,44 @@ img {
   min-width: 100%; }
 
 * {
-  font-weight: normal; }
+  font-weight: normal;
+  outline: none; }
 
 /* header images */
 header {
   position: relative; }
+  header .header-content {
+    background: none;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: all 0.2s linear 0.2s;
+    width: 100%;
+    z-index: 400; }
+    header .header-content.f-nav {
+      background: #222;
+      transition: all 0.2s linear 0.2s; }
+    header .header-content .logo h1 a {
+      background: url("../images/paper-logo.png") no-repeat top center;
+      display: block;
+      height: 28px;
+      text-indent: -999999px;
+      width: 148px; }
+    header .header-content .menu ul {
+      display: block;
+      float: right;
+      padding: 2% 0; }
+      header .header-content .menu ul li {
+        list-style: none;
+        float: left; }
+        header .header-content .menu ul li a {
+          color: #fff;
+          font-family: 'brandon_grotesquelight';
+          font-size: 18px;
+          margin-left: 30%;
+          text-decoration: none; }
+        header .header-content .menu ul li.current a {
+          color: #7690c5; }
   header .cycle-slideshow {
     position: relative; }
     header .cycle-slideshow .item {
@@ -442,5 +475,12 @@ header {
       margin: 0 5px; }
       header .cycle-pager span.cycle-pager-active {
         color: #fff; }
+
+/* content */
+#web-development {
+  background: #fafafa; }
+
+#contact {
+  background: #7690c5; }
 
 /*# sourceMappingURL=main.css.map */

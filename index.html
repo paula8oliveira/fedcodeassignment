@@ -38,51 +38,111 @@
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body>
+    <body id="top">
 
-        <header class="pure-g">
-            <div class="cycle-slideshow pure-u-1" 
-                data-cycle-fx=scrollHorz
-                data-cycle-timeout=8000
-                data-cycle-pager-event="mouseover"
-                data-cycle-slides="> div"
-                >
-                <p class="cycle-pager"></p>
-                
-                <div class="item">
-                    <div class="transparent-layer"></div>
-                    <img src="images/image-header-01.jpg" />
-                    <div class="pure-g">
-                        <div class="info pure-u-1-5"></div>
-                        <div class="info pure-u-3-5">
-                            <h2>Can you build the website of my dreams?</h2>
-                            <p>Yup, we can do that.</p>
-                            <a href="#">Learn More</a>
-                        </div>
-                        <div class="info pure-u-1-5"></div>
-                    </div>
-                </div><!--/ item-->
-                <div class="item">
-                    <div class="transparent-layer"></div>
-                    <img src="images/image-header-02.jpg" />
-                    <div class="pure-g">
-                        <div class="info pure-u-1-5"></div>
-                        <div class="info pure-u-3-5">
-                            <h2>Fusce ut leo vel leo dictum aliquet convallis</h2>
-                            <p>Pellentesque ut scelerisque.</p>
-                            <a href="#">Learn More</a>
-                        </div>
-                        <div class="info pure-u-1-5"></div>
-                    </div>
-
-                </div><!--/ item-->
-
+        <header>
+            <div class="header-content pure-g">
+                <div class="pure-u-1-5"></div>
+                <div class="logo pure-u-1-5">
+                    <h1><a href="#top">Paper</a></h1>
+                </div>
+                <div class="menu pure-u-2-5">
+                    <ul>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="pure-u-1-5"></div>
             </div>
-            
+            <div class="pure-g">
+                <div class="cycle-slideshow pure-u-1" 
+                    data-cycle-fx=scrollHorz
+                    data-cycle-timeout=8000
+                    data-cycle-pager-event="mouseover"
+                    data-cycle-slides="> div"
+                    >
+                    <p class="cycle-pager"></p>
+                    
+                    <div class="item">
+                        <div class="transparent-layer"></div>
+                        <img src="images/image-header-01.jpg" />
+                        <div class="pure-g">
+                            <div class="info pure-u-1-5"></div>
+                            <div class="info pure-u-3-5">
+                                <h2>Can you build the website of my dreams?</h2>
+                                <p>Yup, we can do that.</p>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="info pure-u-1-5"></div>
+                        </div>
+                    </div><!--/ item-->
+                    <div class="item">
+                        <div class="transparent-layer"></div>
+                        <img src="images/image-header-02.jpg" />
+                        <div class="pure-g">
+                            <div class="info pure-u-1-5"></div>
+                            <div class="info pure-u-3-5">
+                                <h2>Fusce ut leo vel leo dictum aliquet convallis</h2>
+                                <p>Pellentesque ut scelerisque.</p>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="info pure-u-1-5"></div>
+                        </div>
+                    </div><!--/ item-->
+                </div>
+            </div>
         </header>
 
-        <div role="main" class="main">
-        </div>
+        <section role="main" class="main">
+            <article id="web-development" class="pure-g">
+                <div class="pure-u-1-5"></div>
+                <div class="pure-u-2-5">
+                    texto
+                </div>
+                <div class="pure-u-1-5">
+                    imagem
+                </div>
+                <div class="pure-u-1-5"></div>
+                
+            </article><!-- /web-development-->
+            <article id="identity-branding" class="pure-g">
+                <div class="pure-u-1-5"></div>
+                <div class="pure-u-1-5">
+                    imagem
+                </div>
+                <div class="pure-u-2-5">
+                    texto
+                </div>
+                <div class="pure-u-1-5"></div>
+            </article><!--/ identity-branding -->
+            <article id="services" class="pure-g">
+                <div class="pure-u-1-5"></div>
+                <div class="pure-u-3-5">
+                    <div class="pure-g">
+                        <div class="pure-u-1-2">
+                            lista 1
+                        </div>
+                        <div class="pure-u-1-2">
+                            lista 2
+                        </div>
+                    </div>
+                </div>
+                <div class="pure-u-1-5"></div>
+            </article>
+            <article id="contact" class="pure-g">
+                <div class="pure-u-4-24"></div>
+                <div class="pure-u-8-24">
+                    texto
+                </div>
+                <div class="pure-u-8-24">
+                    form
+                </div>
+                <div class="pure-u-4-24"></div>
+            </article>
+        </section>
 
         <footer>
         </footer>
@@ -91,6 +151,9 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 
         <script src="http://malsup.github.io/jquery.cycle2.js"></script>
+        <script src="js/jquery.nav.js"></script>
+        <script src="js/jquery.scrollTo.js"></script>
+    
         <script src="js/main.js"></script>
         
 

@@ -20,11 +20,59 @@ img{
 
 *{
 	font-weight: normal;
+	outline: none;
 }
 
 /* header images */
 header{
 	position: relative;
+	.header-content{
+		background: none;
+		left: 0;
+		position: fixed;
+		top: 0;
+		transition: all 0.2s linear 0.2s; 
+		width: 100%;
+		z-index: 400;
+		&.f-nav{
+			background: $fourthcolor;
+			transition: all 0.2s linear 0.2s; 
+		}
+		.logo{
+			h1{
+				a{
+					background: url("../images/paper-logo.png") no-repeat top center;
+					display: block;
+					height: 28px;
+					text-indent: -999999px;
+					width: 148px;
+				}
+			}
+		}
+		.menu{
+			ul{
+				display: block;
+				float: right;
+				padding: 2% 0;
+				li{
+					list-style: none;
+					float: left;
+					a{
+						color: $firstcolor;
+						font-family: 'brandon_grotesquelight';
+						font-size: 18px;
+						margin-left: 30%;
+						text-decoration: none;
+					}
+					&.current{
+						a{
+							color: #7690c5;
+						}
+					}
+				}
+			}
+		}
+	}
 	.cycle-slideshow{
 		position: relative;
 		.item{
@@ -111,6 +159,12 @@ header{
 			}
 		}
 	}
-
 }
 
+/* content */
+#web-development{
+	background:#fafafa;
+}
+#contact{
+	background: #7690c5;
+}
