@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Author's custom styles - seu.nome@planb.com.br
+   ========================================================================== */
+
+@import "normalize";
+@import "fonts";
+
+/************/
+
+$firstcolor: #fff;
+$secondcolor: #fafafa;
+$thirdcolor: #777;
+$fourthcolor: #222;
+
+/************/
+
+img{
+	min-width:100%;
+}
+
+*{
+	font-weight: normal;
+}
+
+/* header images */
+header{
+	position: relative;
+	.cycle-slideshow{
+		position: relative;
+		.item{
+			position: relative;
+			.transparent-layer{
+				background: #000;
+				bottom: 0;
+				display: block;
+				height: 100%;
+				left: 0;
+				opacity: 0.35;
+				filter: alpha(opacity=35); /* For IE8 and earlier */
+
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 100%;
+				z-index: 200;
+			}
+			img{
+				position: relative;
+				z-index: 100;
+			}
+			.pure-g{
+				position: absolute;
+				top: 30%;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				z-index: 300;
+			}
+			h2{
+				color: $firstcolor;
+				font-family: 'brandon_grotesquelight';
+				font-size: 32px;
+				text-align: center;
+			}
+			p, a{
+				color: $firstcolor;
+				font-family: 'brandon_grotesquebold';
+				font-size: 66px;
+				line-height: 1px;
+				text-align: center;
+			}
+			a{
+				border-radius: 2px;
+				-moz-border-radius: 2px;
+				-o-border-radius: 2px;
+				-webkit-border-radius: 2px;
+				border: 2px solid $firstcolor;
+				font-family: 'brandon_grotesque_regularRg';
+				font-size: 23px;
+				line-height: 60px;
+				padding: 0 5%;
+				text-decoration: none;
+
+				-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+				-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+				transition: transform 0.2s, opacity 0.2s;
+
+				&:hover{
+					-webkit-transform: scale(0.85);
+					-moz-transform: scale(0.85);
+					-ms-transform: scale(0.85);
+					transform: scale(0.85);
+				}
+			}
+		}
+	}
+	.cycle-pager{
+		bottom: 0;
+		display: block;
+		position: absolute;
+		text-align: center;;
+		z-index: 777777;
+		width: 100%;
+		span{
+			color: $fourthcolor;
+			cursor: pointer;
+			font-size: 35px;
+			margin: 0 5px;
+			&.cycle-pager-active{
+				color: $firstcolor;
+			}
+		}
+	}
+
+}
+

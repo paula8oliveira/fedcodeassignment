@@ -28,4 +28,7 @@ module.exports = function(grunt) {
  
 	// tarefas
 	grunt.registerTask('default', ['jshint']);
+
+	//SASS
+	grunt.loadNpmTasks('grunt-contrib-sass');
 };

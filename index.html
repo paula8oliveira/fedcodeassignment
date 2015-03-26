@@ -26,13 +26,59 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
 
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->  
+            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+        <!--<![endif]-->
+
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
 
-        <header>
+        <header class="pure-g">
+            <div class="cycle-slideshow pure-u-1" 
+                data-cycle-fx=scrollHorz
+                data-cycle-timeout=8000
+                data-cycle-pager-event="mouseover"
+                data-cycle-slides="> div"
+                >
+                <p class="cycle-pager"></p>
+                
+                <div class="item">
+                    <div class="transparent-layer"></div>
+                    <img src="images/image-header-01.jpg" />
+                    <div class="pure-g">
+                        <div class="info pure-u-1-5"></div>
+                        <div class="info pure-u-3-5">
+                            <h2>Can you build the website of my dreams?</h2>
+                            <p>Yup, we can do that.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="info pure-u-1-5"></div>
+                    </div>
+                </div><!--/ item-->
+                <div class="item">
+                    <div class="transparent-layer"></div>
+                    <img src="images/image-header-02.jpg" />
+                    <div class="pure-g">
+                        <div class="info pure-u-1-5"></div>
+                        <div class="info pure-u-3-5">
+                            <h2>Fusce ut leo vel leo dictum aliquet convallis</h2>
+                            <p>Pellentesque ut scelerisque.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div class="info pure-u-1-5"></div>
+                    </div>
+
+                </div><!--/ item-->
+
+            </div>
+            
         </header>
 
         <div role="main" class="main">
@@ -44,7 +90,9 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 
+        <script src="http://malsup.github.io/jquery.cycle2.js"></script>
         <script src="js/main.js"></script>
+        
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
