@@ -36,13 +36,28 @@
 
         <link rel="stylesheet" href="css/main.css">
 
+        <link rel="stylesheet" href="fonts/iconfonts/css/fontello.css">
+        <link rel="stylesheet" href="fonts/iconfonts/css/animation.css">
+
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body id="top">
-
+    <body>
+        <div id="top"></div>
+        <div class="slideout-menu">
+            <h3>Menu <a href="#" class="slideout-menu-toggle">×</a></h3>
+            <ul>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#web-development">Clients</a></li>
+                <li><a href="#identity-branding">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
         <header>
             <div class="header-content pure-g">
-                <div class="pure-u-1-5"></div>
+                <div class="pure-u-1-5">
+                    <a href="#" class="slideout-menu-toggle open-menu"> <img src="images/burger-menu.png"></a>
+                </div>
                 <div class="logo pure-u-1-5">
                     <h1><a href="#top">Paper</a></h1>
                 </div>
@@ -50,101 +65,167 @@
                     <ul>
                         <li><a href="#top">Home</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#">Clients</a></li>
-                        <li><a href="#">Team</a></li>
+                        <li><a href="#web-development">Clients</a></li>
+                        <li><a href="#identity-branding">Team</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="pure-u-1-5"></div>
             </div>
-            <div class="pure-g">
-                <div class="cycle-slideshow pure-u-1" 
-                    data-cycle-fx=scrollHorz
-                    data-cycle-timeout=8000
-                    data-cycle-pager-event="mouseover"
-                    data-cycle-slides="> div"
-                    >
-                    <p class="cycle-pager"></p>
-                    
-                    <div class="item">
-                        <div class="transparent-layer"></div>
-                        <img src="images/image-header-01.jpg" />
-                        <div class="pure-g">
-                            <div class="info pure-u-1-5"></div>
-                            <div class="info pure-u-3-5">
-                                <h2>Can you build the website of my dreams?</h2>
-                                <p>Yup, we can do that.</p>
-                                <a href="#">Learn More</a>
-                            </div>
-                            <div class="info pure-u-1-5"></div>
-                        </div>
-                    </div><!--/ item-->
-                    <div class="item">
-                        <div class="transparent-layer"></div>
-                        <img src="images/image-header-02.jpg" />
-                        <div class="pure-g">
-                            <div class="info pure-u-1-5"></div>
-                            <div class="info pure-u-3-5">
-                                <h2>Fusce ut leo vel leo dictum aliquet convallis</h2>
-                                <p>Pellentesque ut scelerisque.</p>
-                                <a href="#">Learn More</a>
-                            </div>
-                            <div class="info pure-u-1-5"></div>
-                        </div>
-                    </div><!--/ item-->
+            <div class="highlights">
+                <div class="transparent-layer"></div>
+                <img src="images/image-header-01.jpg" />
+                <div class="pure-g">
+                    <div class="info pure-u-1-5"></div>
+                    <div class="info pure-u-3-5">
+                        <h2>Can you build the website of my dreams?</h2>
+                        <p>Yup, we can do that.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="info pure-u-1-5"></div>
                 </div>
-            </div>
+            </div><!--/ item-->
         </header>
 
         <section role="main" class="main">
             <article id="web-development" class="pure-g">
-                <div class="pure-u-1-5"></div>
-                <div class="pure-u-2-5">
-                    texto
+                <div class="pure-u-md-1-5 pure-u-1"></div>
+                <div class="pure-u-md-2-5 pure-u-1 text">
+                    <h2>Web <span>Development</span></h2>
+                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                    <p>Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim.</p>
                 </div>
-                <div class="pure-u-1-5">
-                    imagem
-                </div>
-                <div class="pure-u-1-5"></div>
+                <div class="pure-u-md-2-5 pure-u-1 bg"></div>
                 
             </article><!-- /web-development-->
             <article id="identity-branding" class="pure-g">
-                <div class="pure-u-1-5"></div>
-                <div class="pure-u-1-5">
-                    imagem
+                <div class="pure-u-md-2-5 pure-u-1 bg"></div>
+                <div class="pure-u-md-2-5 pure-u-1 text">
+                    <h2>Identity <span>Branding</span></h2>
+                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+                    <p>Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim.</p>
                 </div>
-                <div class="pure-u-2-5">
-                    texto
-                </div>
-                <div class="pure-u-1-5"></div>
+                <div class="pure-u-md-2-5 pure-u-1"></div>
             </article><!--/ identity-branding -->
             <article id="services" class="pure-g">
-                <div class="pure-u-1-5"></div>
-                <div class="pure-u-3-5">
+                <div class="pure-u-md-1-5 pure-u-1"></div>
+                <div class="pure-u-md-3-5 pure-u-1">
                     <div class="pure-g">
-                        <div class="pure-u-1-2">
-                            lista 1
+                        <div class="pure-u-lg-1-2 pure-u-1">
+                            <div class="item pure-g">
+                                <div class="pure-u-sm-1-5 pure-u-1">
+                                    <a class="icon icon-branding"></a>
+                                </div>
+                                <div class="info pure-u-sm-3-5 pure-u-1">
+                                    <h2>Branding & Identity</h2>
+                                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pure-u-sm-1-5 pure-u-1">
+                                    <a class="icon icon-tablet"></a>
+                                </div>
+                                <div class="info pure-u-sm-3-5 pure-u-1">
+                                    <h2>Mobile App Development</h2>
+                                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pure-u-sm-1-5 pure-u-1">
+                                    <a class="icon icon-uiux"></a>
+                                </div>
+                                <div class="info pure-u-sm-3-5 pure-u-1">
+                                    <h2>UI/UX</h2>
+                                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="pure-u-1-2">
-                            lista 2
+                        <div class="pure-u-lg-1-2 pure-u-1">
+                            <div class="item">
+                                <div class="pure-u-sm-1-5 pure-u-1">
+                                    <a class="icon icon-web"></a>
+                                </div>
+                                <div class="info pure-u-sm-3-5 pure-u-1">
+                                    <h2>Web & Graphic Design</h2>
+                                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pure-u-sm-1-5 pure-u-1">
+                                    <a class="icon icon-animations"></a>
+                                </div>
+                                <div class="info pure-u-sm-3-5 pure-u-1">
+                                    <h2>Animations</h2>
+                                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="pure-u-sm-1-5 pure-u-1">
+                                    <a class="icon icon-photography"></a>
+                                </div>
+                                <div class="info pure-u-sm-3-5 pure-u-1">
+                                    <h2>Photography</h2>
+                                    <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="pure-u-1-5"></div>
-            </article>
+                <div class="pure-u-md-1-5 pure-u-1"></div>
+            </article><!--/services-->
             <article id="contact" class="pure-g">
-                <div class="pure-u-4-24"></div>
-                <div class="pure-u-8-24">
-                    texto
+                <div class="pure-u-lg-4-24 pure-u-1-24"></div>
+                <div class="pure-u-lg-7-24 pure-u-23-24">
+                    <h2>Say <span>Hello</span></h2>
+                    <p>Don’t be shy, drop us an email and say hello! We are a really nice bunch of people :)</p>
+                    <ul>
+                        <li>
+                            <p class="icon icon-mobile"> <span>(416) 555-0000</span></p>
+                        </li>
+                        <li>
+                            <p class="icon icon-mail"> <span>hello@paper.com</span></p>
+                        </li>
+                        <li>
+                            <p class="icon icon-twitter"> <span>@paper</span></p>
+                        </li> 
+                        <li>
+                            <p class="icon icon-facebook"> <span>facebook.com/paper</span></p>
+                        </li>
+                        <li>
+                            <p class="icon icon-gplus"> <span>plus.com/paper</span></p>
+                        </li>
+                        <li>
+                            <p class="icon icon-pinterest"> <span>pinterest.com/paper</span></p>
+                        </li>
+                    </ul>
+
                 </div>
-                <div class="pure-u-8-24">
-                    form
+                <div class="pure-u-lg-4-24 pure-u-1-24"></div>
+                <div class="pure-u-lg-7-24 pure-u-22-24">
+                    <form>
+                        <label for="name">
+                            Your Name*
+                            <input id="name" type="text" />
+                        </label>
+                        <label for="mail">
+                            Your E-mail*
+                            <input id="mail" type="text" />
+                        </label>
+                        <label for="message">
+                            Your Message*
+                            <textarea id="message"></textarea>
+                        </label>
+                    </form>
                 </div>
-                <div class="pure-u-4-24"></div>
+                <div class="pure-u-lg-4-24 pure-u-1"></div>
             </article>
         </section>
 
-        <footer>
+        <footer class="pure-g">
+            <div class="pure-u-4-24"></div>
+            <div class="pure-u-16-24"><span>© 2015 Paper</span></div>
+            <div class="pure-u-4-24"></div>
+            
         </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
